@@ -1,0 +1,107 @@
+section.sections2 {
+  margin-top: 50px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: -100px;
+    z-index: -1;
+    right: 0;
+    width: 100%;
+    height: 149.86px;
+    border-radius: 80%;
+    background-color: #fcf9f5;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -100px;
+    // z-index: -1;
+    right: 0;
+    width: 100%;
+    height: 149.86px;
+    border-radius: 80%;
+    background-color: #fcf9f5;
+    box-shadow: 0px 10px 20px 0px #dfeceb;
+  }
+
+  .boxes_container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 23px;
+    .box_container {
+      width: 412px;
+      display: flex;
+      flex-direction: column;
+
+      button {
+        align-self: flex-end;
+      }
+      .box {
+        padding: 16px;
+        margin-bottom: 24px;
+
+        .img_container {
+          margin-top: -100px;
+          text-align: center;
+          align-items: center;
+          img {
+            width: 257px;
+            height: 268px;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+        }
+
+        .title {
+          h3 {
+            text-align: start;
+            font-size: 40px;
+
+            font-weight: 700;
+            color: var(--main-white);
+            margin-top: 20px;
+          }
+        }
+
+        .desc {
+          p {
+            font-size: 24px;
+            font-weight: 400;
+            color: var(--main-white);
+          }
+        }
+      }
+
+      &:first-child {
+        .box {
+          border-top-right-radius: 200.64px;
+          background-color: var(--main-blue);
+        }
+      }
+      &:nth-child(2) {
+        .box {
+          background-color: #dfeceb;
+          .title {
+            h3 {
+              color: var(--main-blue);
+            }
+          }
+
+          .desc {
+            p {
+              color: var(--main-blue);
+            }
+          }
+        }
+      }
+      &:nth-child(3) {
+        .box {
+          border-top-left-radius: 200.64px;
+          background-color: var(--main-blue);
+        }
+      }
+    }
+  }
+}

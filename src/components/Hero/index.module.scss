@@ -1,0 +1,70 @@
+section.hero {
+  position: relative;
+
+  .sec_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); // ✅ ده اللي يظبط التوسيط
+    z-index: 9999;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column; // 👈 مهم لو فيه عناصر فوق بعض
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .dark_logo {
+      img {
+        width: 832px;
+        height: 125px;
+        object-fit: cover;
+      }
+    }
+
+    .title {
+      margin-top: 22px;
+      h2 {
+        margin: 0;
+        font-weight: 700;
+        font-size: 24px;
+        color: #333333;
+      }
+    }
+  }
+}
+
+.panoramaWrapper {
+  position: relative;
+  width: 100%;
+  height: 680px;
+  overflow: hidden;
+  // background: #000;
+}
+
+.panoramaImage {
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+  // background: linear-gradient(
+  //   180deg,
+  //   rgba(252, 249, 245, 0.7) 0%,
+  //   rgba(202, 156, 94, 0.35) 100%
+  // );
+
+  background: linear-gradient(
+    180deg,
+    rgba(252, 249, 245, 0.7) 0%,
+    rgba(202, 156, 94, 0.35) 100%
+  );
+}

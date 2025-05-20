@@ -1,0 +1,39 @@
+// PanoramaSlider.module.scss
+.wrapper {
+  padding: 40px 0;
+  overflow: hidden;
+  direction: rtl;
+}
+
+.titleBox {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.mainTitle {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.subTitle {
+  font-size: 20px;
+  color: #666;
+}
+
+.swiper {
+  perspective: 1200px;
+}
+
+.slide {
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  height: 450px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}

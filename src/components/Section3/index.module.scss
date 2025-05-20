@@ -1,0 +1,42 @@
+section.sections3 {
+  margin-top: 250px;
+  position: relative;
+  .dots {
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    z-index: 0;
+    img {
+      object-fit: cover;
+      width: 341px;
+      height: 172px;
+    }
+  }
+  .boxes_container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 153px;
+
+    .box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .img_container {
+        margin-top: -100px;
+        text-align: center;
+        align-items: center;
+        img {
+          width: 428px;
+          height: 376px;
+          object-fit: contain;
+        }
+      }
+
+      .text_container {
+      }
+    }
+  }
+}
