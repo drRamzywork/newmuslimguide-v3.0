@@ -3,26 +3,31 @@ import React from "react";
 import { RiArrowDownSLine } from "react-icons/ri";
 import styles from "./index.module.scss";
 import Link from "next/link";
+import { useRouter } from "next/router";
 const Navbar = () => {
+  const router = useRouter();
+  console.log(router, "router");
   return (
     <>
       <nav id={styles.nav}>
         <div className="container">
           <div className={styles.sec_container}>
-            <div className={styles.logo}>
+            <Link href={"/"} className={styles.logo}>
               <Image alt="logo" src={"/logo.png"} width={255} height={38.38} />
-            </div>
+            </Link>
 
             <div className={styles.links_container}>
               <ul>
                 <li>
-                  <a href="">الرئيسية</a>
+                  <a href="/">الرئيسية</a>
                 </li>
                 <li>
-                  <a href="">المقدمات</a>
+                  <a href="/introductions">المقدمات</a>
                 </li>
                 <li>
-                  <button>الاقسام</button>
+                  <button onClick={() => router.push("/sections")}>
+                    الاقسام
+                  </button>
                   <ul className={styles.menu_container}>
                     <li>
                       <Link href="/">قسم 1</Link>

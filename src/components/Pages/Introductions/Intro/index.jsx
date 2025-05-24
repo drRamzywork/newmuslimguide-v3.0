@@ -6,19 +6,18 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
 import FreePanoramaSlider from "../FreePanoramaSlider";
+import Link from "next/link";
 
 const Intro = () => {
   return (
     <>
       <section id="intro" className={styles.intro}>
-        <div className="container">
-          <div className="main_title">
-            <h2>مقدمات الكتاب</h2>
+        {/* <div className="container">
+          <div className="main_title page dark">
+            <h2>المقدمات</h2>
           </div>
 
-          <div className="sec_title">
-            <h3>دليل المسلم فى جميع جوانب الحياة</h3>
-          </div>
+        
         </div>
         <div className="sec_container">
           <Swiper
@@ -111,7 +110,7 @@ const Intro = () => {
               />
             </SwiperSlide>
           </Swiper>
-        </div>
+        </div> */}
         <FreePanoramaSlider />
       </section>
     </>

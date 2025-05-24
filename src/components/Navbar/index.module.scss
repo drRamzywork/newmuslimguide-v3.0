@@ -22,6 +22,7 @@ nav#nav {
       img {
       }
     }
+
     .links_container {
       ul {
         display: flex;
@@ -42,6 +43,7 @@ nav#nav {
             color: var(--main-blue);
             font-size: 24px;
             font-weight: 700;
+            cursor: pointer;
           }
 
           ul.menu_container {
@@ -54,6 +56,7 @@ nav#nav {
         }
       }
     }
+
     .langs {
       button {
         background-color: transparent;

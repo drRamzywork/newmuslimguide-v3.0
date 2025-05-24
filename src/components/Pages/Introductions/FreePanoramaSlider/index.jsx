@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styles from "./index.module.scss";
+import Link from "next/link";
+import { IoIosArrowBack } from "react-icons/io";
 
 const images = [
   "/assets/imgs/intro_1.jpg",
@@ -25,12 +27,20 @@ export default function FreePanoramaSlider() {
 
   return (
     <div className={styles.wrapper}>
-      <div className="main_title">
-        <h2>مقدمات الكتاب</h2>
+      <div className="main_title page">
+        <h2>المقدمات</h2>
       </div>
 
-      <div className="sec_title">
-        <h3>دليل المسلم فى جميع جوانب الحياة</h3>
+      <div className={styles.nav}>
+        <ul>
+          <li>
+            <Link href="/">الرئيسية</Link>
+            <IoIosArrowBack />
+          </li>
+          <li>
+            <Link href="/introductions">المقدمات</Link>
+          </li>
+        </ul>
       </div>
       <div className={styles.slider3d}>
         <button className={styles.arrow + " " + styles.left} onClick={goLeft}>
